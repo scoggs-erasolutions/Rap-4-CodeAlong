@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <style>
+        #card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 0 auto;
+            position: relative;
+            background-color: rgb(110, 1, 1);
+            color: white;
+            overflow: hidden;
+        }
+
+        #HP {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            margin: 0;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: slategray;
+            border-radius: .5rem;
+        }
+
+        #moves {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            border-top: 2px solid black;
+        }
+
+        #moves li {
+            text-align: center;
+            margin: 5px;
+            width: 40%;
+            background-color: rgb(2, 125, 141);
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            height: 100px;
+            gap: 5px;
+        }
+        #info h3{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        <h3 id="HP"></h3>
+        <div id="img"></div>
+        <div id="info"></div>
+        <ul id="moves"></ul>
+    </div>
+    <script>
+        let card = document.getElementById('card')
+        let HP = document.getElementById('HP')
+        let img = document.getElementById('img')
+        let info = document.getElementById('info')
+        let moves = document.getElementById('moves')
+        let pokemon = 'pikachu';
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+        .then((response) => {
+            HP.innerText = `HP: ${response.data.stats[0].base_stat}`
+            info.appendChild(document.createElement('h3')).innerText = `Name: ${response.data.name}`
+            info.appendChild(document.createElement('h3')).innerText = `Type: ${response.data.types[0].type.name}`
+            img.appendChild(document.createElement('img')).src = response.data.sprites.front_shiny;
+            response.data.moves.slice(0, 4).forEach(move => {
+                let li = document.createElement('li');
+                li.innerText = move.move.name;
+                moves.appendChild(li)
+            });
+        })
+        .catch((error) => {
+            console.log(errir)
+            alert('yo you got an error bruh')
+        })
+    </script>
+</body>
+</html>
