@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="card">
+      <div id="name-div">
+        <h1 id="name">Name</h1>
+      </div>
+			
+			<div id="armor-div"">
+        <img id="shield" src="shield.png" alt="shield">
+				<h2 id="armor">00</h2>
+			</div>
+			<div id="img"></div>
+			<div id="bottom-div">
+        <div class="bottom-col"">
+          <h3 class="bottom-heading">Type</h3>
+          <p id="type">Lorem</p>
+        </div>
+				
+        <div class="bottom-col">
+          <h3 class="bottom-heading">Faction</h3>
+          <p id="faction">Ipsum</p>
+        </div>
+				
+			</div>
+		</div>
+		<script>
+			let card = document.getElementById("card");
+			let name = document.getElementById("name");
+			let armor = document.getElementById("armor");
+			let type = document.getElementById("type");
+			let faction = document.getElementById("faction");
+			let img = document.getElementById("img");
+
+			axios
+				.get(`/characters`)
+				.then((res) => {
+					console.log(res);
+					card.style.backgroundImage = `url(${res.data[0].imgGold})`;
+					name.innerText = `${res.data[0].name}`;
+					armor.innerText = `${res.data[0].armor}`;
+					type.innerText = `${res.data[0].type}`;
+					faction.innerText = `${res.data[0].faction}`;
+					//img.appendChild(document.createElement("img")).src = `${res.data[0].imgGold}`;
+				})
+				.catch((error) => {
+					console.error("Error fetching data: ", error);
+				});
+		</script>
+		<!-- <script>
+			let card = document.getElementById("card");
+			let HP = document.getElementById("HP");
+			let img = document.getElementById("img");
+			let info = document.getElementById("info");
+			let moves = document.getElementById("moves");
+			let pokemon = "pikachu";
+			axios
+				.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+				.then((response) => {
+					HP.innerText = `HP: ${response.data.stats[0].base_stat}`;
+					info.appendChild(
+						document.createElement("h3")
+					).innerText = `Name: ${response.data.name}`;
+					info.appendChild(
+						document.createElement("h3")
+					).innerText = `Type: ${response.data.types[0].type.name}`;
+					img.appendChild(document.createElement("img")).src =
+						response.data.sprites.front_shiny;
+					response.data.moves.slice(0, 4).forEach((move) => {
+						let li = document.createElement("li");
+						li.innerText = move.move.name;
+						moves.appendChild(li);
+					});
+				})
+				.catch((error) => {
+					console.log(errir);
+					alert("yo you got an error bruh");
+				});
+		</script> -->
+	</body>
+</html>
