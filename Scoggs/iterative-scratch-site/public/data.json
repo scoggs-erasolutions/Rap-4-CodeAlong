@@ -1,0 +1,499 @@
+{
+  "recipes": [
+    {
+      "vegetarian": false,
+      "vegan": false,
+      "glutenFree": true,
+      "dairyFree": false,
+      "veryHealthy": false,
+      "cheap": false,
+      "veryPopular": false,
+      "sustainable": false,
+      "lowFodmap": false,
+      "weightWatcherSmartPoints": 0,
+      "gaps": "no",
+      "preparationMinutes": null,
+      "cookingMinutes": null,
+      "aggregateLikes": 7,
+      "healthScore": 0,
+      "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+      "license": "CC BY 3.0",
+      "sourceName": "Foodista",
+      "pricePerServing": 16.52,
+      "extendedIngredients": [
+        {
+          "id": 1001,
+          "aisle": "Milk, Eggs, Other Dairy",
+          "image": "butter-sliced.jpg",
+          "consistency": "SOLID",
+          "name": "butter",
+          "nameClean": "butter",
+          "original": "1/2 ounce Butter",
+          "originalName": "Butter",
+          "amount": 0.5,
+          "unit": "ounce",
+          "meta": [],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "oz",
+              "unitLong": "ounces"
+            },
+            "metric": {
+              "amount": 14.175,
+              "unitShort": "g",
+              "unitLong": "grams"
+            }
+          }
+        },
+        {
+          "id": 5062,
+          "aisle": "Meat",
+          "image": "chicken-breasts.png",
+          "consistency": "SOLID",
+          "name": "chicken breasts",
+          "nameClean": "chicken breast",
+          "original": "2 Chicken Breasts, Chopped",
+          "originalName": "Chicken Breasts, Chopped",
+          "amount": 2,
+          "unit": "",
+          "meta": ["chopped"],
+          "measures": {
+            "us": {
+              "amount": 2,
+              "unitShort": "",
+              "unitLong": ""
+            },
+            "metric": {
+              "amount": 2,
+              "unitShort": "",
+              "unitLong": ""
+            }
+          }
+        },
+        {
+          "id": 6194,
+          "aisle": "Canned and Jarred",
+          "image": "chicken-broth.png",
+          "consistency": "LIQUID",
+          "name": "chicken broth",
+          "nameClean": "chicken broth",
+          "original": "1/2 cup Chicken Broth",
+          "originalName": "Chicken Broth",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "cups",
+              "unitLong": "cups"
+            },
+            "metric": {
+              "amount": 117.5,
+              "unitShort": "ml",
+              "unitLong": "milliliters"
+            }
+          }
+        },
+        {
+          "id": 93663,
+          "aisle": "Spices and Seasonings",
+          "image": "garam-masala.jpg",
+          "consistency": "SOLID",
+          "name": "garam masala",
+          "nameClean": "garam masala",
+          "original": "1 teaspoon Garam masala",
+          "originalName": "Garam masala",
+          "amount": 1,
+          "unit": "teaspoon",
+          "meta": [],
+          "measures": {
+            "us": {
+              "amount": 1,
+              "unitShort": "tsp",
+              "unitLong": "teaspoon"
+            },
+            "metric": {
+              "amount": 1,
+              "unitShort": "tsp",
+              "unitLong": "teaspoon"
+            }
+          }
+        },
+        {
+          "id": 11215,
+          "aisle": "Produce",
+          "image": "garlic.png",
+          "consistency": "SOLID",
+          "name": "garlic",
+          "nameClean": "garlic",
+          "original": "1/2 teaspoon Garlic, minced",
+          "originalName": "Garlic, minced",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "meta": ["minced"],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            },
+            "metric": {
+              "amount": 0.5,
+              "unitShort": "tsps",
+              "unitLong": "teaspoons"
+            }
+          }
+        },
+        {
+          "id": 11216,
+          "aisle": "Produce",
+          "image": "ginger.png",
+          "consistency": "SOLID",
+          "name": "ginger",
+          "nameClean": "ginger",
+          "original": "1 inch piece peeled ginger",
+          "originalName": "peeled ginger",
+          "amount": 1,
+          "unit": "inch",
+          "meta": ["peeled"],
+          "measures": {
+            "us": {
+              "amount": 1,
+              "unitShort": "inch",
+              "unitLong": "inch"
+            },
+            "metric": {
+              "amount": 1,
+              "unitShort": "inch",
+              "unitLong": "inch"
+            }
+          }
+        },
+        {
+          "id": 9150,
+          "aisle": "Produce",
+          "image": "lemon.png",
+          "consistency": "SOLID",
+          "name": "lemon",
+          "nameClean": "lemon",
+          "original": "1 large lemon",
+          "originalName": "lemon",
+          "amount": 1,
+          "unit": "large",
+          "meta": [],
+          "measures": {
+            "us": {
+              "amount": 1,
+              "unitShort": "large",
+              "unitLong": "large"
+            },
+            "metric": {
+              "amount": 1,
+              "unitShort": "large",
+              "unitLong": "large"
+            }
+          }
+        },
+        {
+          "id": 4582,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "vegetable-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "oil",
+          "nameClean": "cooking oil",
+          "original": "1 tablespoon of Oil",
+          "originalName": "Oil",
+          "amount": 1,
+          "unit": "tablespoon",
+          "meta": [],
+          "measures": {
+            "us": {
+              "amount": 1,
+              "unitShort": "Tbsp",
+              "unitLong": "Tbsp"
+            },
+            "metric": {
+              "amount": 1,
+              "unitShort": "Tbsp",
+              "unitLong": "Tbsp"
+            }
+          }
+        },
+        {
+          "id": 1001116,
+          "aisle": "Milk, Eggs, Other Dairy",
+          "image": "plain-yogurt.jpg",
+          "consistency": "LIQUID",
+          "name": "yogurt",
+          "nameClean": "plain yogurt",
+          "original": "1/2 cup Plain Yogurt",
+          "originalName": "Plain Yogurt",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["plain"],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "cups",
+              "unitLong": "cups"
+            },
+            "metric": {
+              "amount": 122.5,
+              "unitShort": "ml",
+              "unitLong": "milliliters"
+            }
+          }
+        },
+        {
+          "id": 1102047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt-and-pepper.jpg",
+          "consistency": "SOLID",
+          "name": "salt and pepper",
+          "nameClean": "salt and pepper",
+          "original": "Salt and Pepper to Taste",
+          "originalName": "Salt and Pepper to Taste",
+          "amount": 48,
+          "unit": "servings",
+          "meta": ["to taste"],
+          "measures": {
+            "us": {
+              "amount": 48,
+              "unitShort": "servings",
+              "unitLong": "servings"
+            },
+            "metric": {
+              "amount": 48,
+              "unitShort": "servings",
+              "unitLong": "servings"
+            }
+          }
+        },
+        {
+          "id": 1056,
+          "aisle": "Milk, Eggs, Other Dairy",
+          "image": "sour-cream.jpg",
+          "consistency": "SOLID",
+          "name": "cream",
+          "nameClean": "sour cream",
+          "original": "1/2 cup Sour Cream",
+          "originalName": "Sour Cream",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": ["sour"],
+          "measures": {
+            "us": {
+              "amount": 0.5,
+              "unitShort": "cups",
+              "unitLong": "cups"
+            },
+            "metric": {
+              "amount": 115,
+              "unitShort": "ml",
+              "unitLong": "milliliters"
+            }
+          }
+        },
+        {
+          "id": 11529,
+          "aisle": "Produce",
+          "image": "tomato.png",
+          "consistency": "SOLID",
+          "name": "tomatoes",
+          "nameClean": "tomato",
+          "original": "14 1/2 Oz. Can Diced Tomatoes",
+          "originalName": "Diced Tomatoes",
+          "amount": 14.5,
+          "unit": "Oz",
+          "meta": ["diced"],
+          "measures": {
+            "us": {
+              "amount": 14.5,
+              "unitShort": "Oz",
+              "unitLong": "Ozs"
+            },
+            "metric": {
+              "amount": 14.5,
+              "unitShort": "Oz",
+              "unitLong": "Ozs"
+            }
+          }
+        }
+      ],
+      "id": 647799,
+      "title": "Indian Butter Chicken",
+      "readyInMinutes": 45,
+      "servings": 48,
+      "sourceUrl": "https://www.foodista.com/recipe/YFDM66DG/indian-butter-chicken-mommie-cooks",
+      "image": "https://img.spoonacular.com/recipes/647799-556x370.jpg",
+      "imageType": "jpg",
+      "summary": "You can never have too many Indian recipes, so give Indian Butter Chicken a try. This gluten free recipe serves 48 and costs \u003Cb\u003E17 cents per serving\u003C/b\u003E. One portion of this dish contains about \u003Cb\u003E2g of protein\u003C/b\u003E, \u003Cb\u003E1g of fat\u003C/b\u003E, and a total of \u003Cb\u003E24 calories\u003C/b\u003E. This recipe from Foodista has 7 fans. If you have salt and pepper, garam masala, tomatoes, and a few other ingredients on hand, you can make it. Only a few people really liked this hor d'oeuvre. From preparation to the plate, this recipe takes around \u003Cb\u003E45 minutes\u003C/b\u003E. Overall, this recipe earns a \u003Cb\u003Enot so great spoonacular score of 10%\u003C/b\u003E. If you like this recipe, you might also like recipes such as \u003Ca href=\"https://spoonacular.com/recipes/indian-butter-chicken-989969\"\u003EIndian Butter Chicken\u003C/a\u003E, \u003Ca href=\"https://spoonacular.com/recipes/indian-butter-chicken-1302779\"\u003EIndian Butter Chicken\u003C/a\u003E, and \u003Ca href=\"https://spoonacular.com/recipes/indian-butter-chicken-1308207\"\u003EIndian Butter Chicken\u003C/a\u003E.",
+      "cuisines": ["Indian", "Asian"],
+      "dishTypes": [
+        "antipasti",
+        "starter",
+        "snack",
+        "appetizer",
+        "antipasto",
+        "hor d'oeuvre"
+      ],
+      "diets": ["gluten free"],
+      "occasions": [],
+      "instructions": "\u003Col\u003E\u003Cli\u003EStart out by adding the oil to your pan and heating it up on medium high heat. Add in your chopped chicken, garlic, and garam masala. Swirl it together and cook it up for about two to three minutes.\u003C/li\u003E\u003Cli\u003ENext up you'll add in your onion and ginger. Continue cooking until the chicken is cooked through.\u003C/li\u003E\u003Cli\u003ENow, turn your heat down a notch to medium and add in your lemon juice and butter.\u003C/li\u003E\u003Cli\u003ELet the butter melt completely and then add in the tomatoes and broth.\u003C/li\u003E\u003Cli\u003EGive the dish a minute or two to heat back up and then stir in the yogurt and sour cream.\u003C/li\u003E\u003Cli\u003EMix it all together and shake in some salt and pepper to taste.\u003C/li\u003E\u003Cli\u003EServe over rice.\u003C/li\u003E\u003C/ol\u003E",
+      "analyzedInstructions": [
+        {
+          "name": "",
+          "steps": [
+            {
+              "number": 1,
+              "step": "Start out by adding the oil to your pan and heating it up on medium high heat.",
+              "ingredients": [
+                {
+                  "id": 4582,
+                  "name": "cooking oil",
+                  "localizedName": "cooking oil",
+                  "image": "vegetable-oil.jpg"
+                }
+              ],
+              "equipment": [
+                {
+                  "id": 404645,
+                  "name": "frying pan",
+                  "localizedName": "frying pan",
+                  "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+                }
+              ]
+            },
+            {
+              "number": 2,
+              "step": "Add in your chopped chicken, garlic, and garam masala. Swirl it together and cook it up for about two to three minutes.Next up you'll add in your onion and ginger. Continue cooking until the chicken is cooked through.Now, turn your heat down a notch to medium and add in your lemon juice and butter.",
+              "ingredients": [
+                {
+                  "id": 93663,
+                  "name": "garam masala",
+                  "localizedName": "garam masala",
+                  "image": "garam-masala.jpg"
+                },
+                {
+                  "id": 9152,
+                  "name": "lemon juice",
+                  "localizedName": "lemon juice",
+                  "image": "lemon-juice.jpg"
+                },
+                {
+                  "id": 0,
+                  "name": "chicken",
+                  "localizedName": "chicken",
+                  "image": "whole-chicken.jpg"
+                },
+                {
+                  "id": 1001,
+                  "name": "butter",
+                  "localizedName": "butter",
+                  "image": "butter-sliced.jpg"
+                },
+                {
+                  "id": 11215,
+                  "name": "garlic",
+                  "localizedName": "garlic",
+                  "image": "garlic.png"
+                },
+                {
+                  "id": 11216,
+                  "name": "ginger",
+                  "localizedName": "ginger",
+                  "image": "ginger.png"
+                },
+                {
+                  "id": 11282,
+                  "name": "onion",
+                  "localizedName": "onion",
+                  "image": "brown-onion.png"
+                }
+              ],
+              "equipment": [],
+              "length": {
+                "number": 2,
+                "unit": "minutes"
+              }
+            },
+            {
+              "number": 3,
+              "step": "Let the butter melt completely and then add in the tomatoes and broth.Give the dish a minute or two to heat back up and then stir in the yogurt and sour cream.",
+              "ingredients": [
+                {
+                  "id": 1056,
+                  "name": "sour cream",
+                  "localizedName": "sour cream",
+                  "image": "sour-cream.jpg"
+                },
+                {
+                  "id": 11529,
+                  "name": "tomato",
+                  "localizedName": "tomato",
+                  "image": "tomato.png"
+                },
+                {
+                  "id": 1001,
+                  "name": "butter",
+                  "localizedName": "butter",
+                  "image": "butter-sliced.jpg"
+                },
+                {
+                  "id": 1116,
+                  "name": "yogurt",
+                  "localizedName": "yogurt",
+                  "image": "plain-yogurt.jpg"
+                },
+                {
+                  "id": 1006615,
+                  "name": "broth",
+                  "localizedName": "broth",
+                  "image": "chicken-broth.png"
+                }
+              ],
+              "equipment": []
+            },
+            {
+              "number": 4,
+              "step": "Mix it all together and shake in some salt and pepper to taste.",
+              "ingredients": [
+                {
+                  "id": 1102047,
+                  "name": "salt and pepper",
+                  "localizedName": "salt and pepper",
+                  "image": "salt-and-pepper.jpg"
+                },
+                {
+                  "id": 0,
+                  "name": "shake",
+                  "localizedName": "shake",
+                  "image": ""
+                }
+              ],
+              "equipment": []
+            },
+            {
+              "number": 5,
+              "step": "Serve over rice.",
+              "ingredients": [
+                {
+                  "id": 20444,
+                  "name": "rice",
+                  "localizedName": "rice",
+                  "image": "uncooked-white-rice.png"
+                }
+              ],
+              "equipment": []
+            }
+          ]
+        }
+      ],
+      "originalId": null,
+      "spoonacularScore": 0.779765725135803,
+      "spoonacularSourceUrl": "https://spoonacular.com/indian-butter-chicken-647799"
+    }
+  ]
+}

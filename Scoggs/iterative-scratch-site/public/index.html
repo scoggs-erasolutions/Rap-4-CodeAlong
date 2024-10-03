@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="Scratch Stuff" content="Scoggs' Scratch Work" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Scratch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="card">
+      <h3 id="HP"></h3>
+      <p id="instructions"></p>
+      <!-- <div id="img"></div> -->
+    </div>
+    <script>
+      let HP = document.getElementById("HP");
+      let instructions = document.getElementById("instructions");
+
+      axios
+        .get(
+          "./data.json"
+          // `https://api.spoonacular.com/recipes/random?apiKey=1700ab22148d4c39a98a22bfa3f36c38`
+        )
+        .then((response) => {
+          HP.innerText = `Title: ${response.data.recipes[0].title}`;
+          instructions.innerText = `${response.data.recipes[0].instructions}`;
+          // info.appendChild(document.createElement("h3"));
+
+          // innerText = `Name: ${response.data.name}`;
+
+          // info.appendChild(
+          //   document.createElement("h3")
+          // ).innerText = `Type: ${response.data.types[0].type.name}`;
+
+          // img.appendChild(document.createElement("img")).src =
+          //   response.data.sprites.front_shiny;
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("yo you got an error bruh");
+        });
+    </script>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
